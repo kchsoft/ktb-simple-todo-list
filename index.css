@@ -1,0 +1,70 @@
+body{
+  display : flex;
+  flex-direction: column;
+}
+
+header{
+  font-size : 35px;
+  font-weight: 500;
+  line-height: 1.4; /*위 아래 줄 간격 조절*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main{
+  height : 520px;
+}
+
+
+
+.todo-input{
+  width: 280px;
+  margin-left: auto; /*width 가 있어야 자동으로 가운데 정렬*/
+  margin-right: auto /*width 가 있어야 자동으로 가운데 정렬*/
+}
+
+.todo-input-button{
+  border : none;
+  border-radius: 20px;
+  background-color: #0088ff;
+  color : white;
+  cursor : pointer;
+  width: 80px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todo-list{
+  width : 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.todo-list-contents{
+  padding-left : 0px;
+}
+.todo-list-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list-remove-btn{
+  border : none;
+  border-radius: 20px;
+  background-color: #0088ff;
+  color : white;
+  cursor : pointer;
+  width: 60px;
+  height: 20px;
+}
+
+.line-through{
+  text-decoration-line: line-through;
+}
+
+footer{
+  text-align: center;
+}
