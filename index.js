@@ -5,6 +5,11 @@ const todoListContents = document.querySelector(".todo-list-contents")
 const toDoListKey = "toDoList"
 
 todoInputButton.addEventListener("click",addToDo)
+todoInputContent.addEventListener("keydown",function(event){
+  if(event.key === 'Enter'){
+    addToDo()
+  }
+})
 
 showAllToDo()
 
