@@ -1,0 +1,15 @@
+https://www.npmjs.com/package/autoprefixer/v/8.0.0
+해당 링크의 CLI 부분을 적용함.
+
+npx postcss index.css --use autoprefixer -d applyAutoprefixerDir/
+
+이 dir에서
+package.json 파일의
+
+  "browserslist": [
+    "chrome >= 8"
+  ]
+
+가 autoprefixer를 반영할 웹 브라우저 기준이 됨.
+즉, 위에 npx CLI를 실행하면,
+크롬 8버전 이상에서 CSS가 적용될 수 있게끔, prefixer를 자동으로 추가해준다.
