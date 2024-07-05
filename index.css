@@ -23,7 +23,7 @@ main{
   margin-right: auto /*width 가 있어야 자동으로 가운데 정렬*/
 }
 
-.todo-input-button{
+.todo-input-btn{
   border : none;
   border-radius: 20px;
   background-color: #0088ff;
@@ -33,7 +33,15 @@ main{
   height: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.2s;
+  box-shadow: 0 5px 0 #0066ff;
 }
+
+.todo-input-btn:active{
+  box-shadow: 0 2px 0 #0066ff;
+  transform : translateY(3px);
+}
+
 
 .todo-list{
   width : 300px;
@@ -45,6 +53,7 @@ main{
 .todo-list-contents{
   padding-left : 0px;
 }
+
 .todo-list-content{
   display: flex;
   justify-content: space-between;

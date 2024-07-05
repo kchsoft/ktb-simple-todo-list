@@ -1,4 +1,4 @@
-const todoInputButton = document.querySelector(".todo-input-button")
+const todoInputButton = document.querySelector(".todo-input-btn")
 const todoInputContent = document.querySelector(".todo-input-content")
 
 const todoListContents = document.querySelector(".todo-list-contents")
