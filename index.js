@@ -15,7 +15,12 @@ showAllToDo()
 
 function showAllToDo(){
   toDoList = JSON.parse(localStorage.getItem(toDoListKey))
-  if(toDoList === null) toDoList = []
+  // localStorage 데이터 검증
+  if (!Array.isArray(toDoList)) {
+    toDoList = [];
+  } else {
+    toDoList = toDoList.filter(item => typeof item === 'string');
+  }
   for(i = 0; i < toDoList.length; i++){
     showOneToDo(toDoList[i])
   }
